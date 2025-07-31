@@ -1,1 +1,19 @@
-
+<?xml version="1.0"?>
+<Container>
+  <Name>zerotier-router</Name>
+  <Repository>jgatringer/unraid_zerotier_router:latest</Repository>
+  <Network>host</Network>
+  <Privileged>true</Privileged>
+  <Support>https://www.zerotier.com/</Support>
+  <WebUI></WebUI>
+  <Icon>https://raw.githubusercontent.com/zerotier/ZeroTierOne/master/resources/logo-zerotier-circle-orange.png</Icon>
+  <ExtraParams>--cap-add=NET_ADMIN</ExtraParams>
+  <Description>
+    ZeroTier Network-Router-Container for Unraid.
+    Image with zerotier-one, iptables, iproute2 und bash. Ideal for Layer-3 routing mit NAT with ZeroTier.
+  </Description>
+  <Config Name="ZeroTier Network ID" Target="ZEROTIER_NETWORK_ID" Default="" Mode="env" Description="Deine ZeroTier Netzwerk-ID (optional, sonst manuell beitreten)" Type="Variable" Display="always" Required="false" Mask="false" />
+  <Config Name="Persistentes ZeroTier-Verzeichnis" Target="/var/lib/zerotier-one" Default="/mnt/user/appdata/zerotier-router" Mode="rw" Description="Speichert Node-ID und Zertifikate" Type="Path" Display="always" Required="true" Mask="false" />
+  <Config Name="PUID" Target="USERMAP_UID" Default="99" Mode="env" Description="Unraid Benutzer-ID" Type="Variable" Display="advanced" Required="false" Mask="false" />
+  <Config Name="PGID" Target="USERMAP_GID" Default="100" Mode="env" Description="Unraid Gruppen-ID" Type="Variable" Display="advanced" Required="false" Mask="false" />
+</Container>
