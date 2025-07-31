@@ -12,8 +12,8 @@
     ZeroTier Network-Router-Container for Unraid.
     Image with zerotier-one, iptables, iproute2 und bash. Ideal for Layer-3 routing mit NAT with ZeroTier.
   </Description>
-  <Config Name="ZeroTier Network ID" Target="ZEROTIER_NETWORK_ID" Default="" Mode="env" Description="Deine ZeroTier Netzwerk-ID (optional, sonst manuell beitreten)" Type="Variable" Display="always" Required="false" Mask="false" />
-  <Config Name="Persistentes ZeroTier-Verzeichnis" Target="/var/lib/zerotier-one" Default="/mnt/user/appdata/zerotier-router" Mode="rw" Description="Speichert Node-ID und Zertifikate" Type="Path" Display="always" Required="true" Mask="false" />
+  <Config Name="ZeroTier Network ID" Target="ZEROTIER_NETWORK_ID" Default="" Mode="env" Description="Deine ZeroTier Netzwerk-ID (optional, can be done later)" Type="Variable" Display="always" Required="false" Mask="false" />
+  <Config Name="Persistentes ZeroTier-Folder" Target="/var/lib/zerotier-one" Default="/mnt/user/appdata/zerotier-router" Mode="rw" Description="stores Node-ID and zertifikates" Type="Path" Display="always" Required="true" Mask="false" />
   <Config Name="PUID" Target="USERMAP_UID" Default="99" Mode="env" Description="Unraid Benutzer-ID" Type="Variable" Display="advanced" Required="false" Mask="false" />
   <Config Name="PGID" Target="USERMAP_GID" Default="100" Mode="env" Description="Unraid Gruppen-ID" Type="Variable" Display="advanced" Required="false" Mask="false" />
 </Container>
