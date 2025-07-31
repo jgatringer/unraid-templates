@@ -15,12 +15,12 @@
 
     This is the userscript:
     #!/bin/bash
-    # ZeroTier NAT & Routing Setup for Unraid Docker Container
+    # ZeroTier NAT and Routing Setup for Unraid Docker Container
     
     # Container-Name (exact the name oft the container)
     CONTAINER="zerotier-router"
     
-    # Wait for Docker & Container startup
+    # Wait for Docker and Container startup
     sleep 15
     
     echo "[ZeroTier Router] activate IP-Forwarding..."
