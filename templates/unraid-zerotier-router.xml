@@ -6,7 +6,7 @@
   <Privileged>true</Privileged>
   <Support>https://www.zerotier.com/</Support>
   <WebUI></WebUI>
-  <Icon>https://raw.githubusercontent.com/zerotier/ZeroTierOne/master/resources/logo-zerotier-circle-orange.png</Icon>
+  <Icon>https://www.zerotier.com/wp-content/uploads/2024/04/ZT_icon_gold_black_2023_d3a8674bf0.webp</Icon>
   <ExtraParams>--cap-add=NET_ADMIN</ExtraParams>
   <Description>
     ZeroTier Network-Router-Container for Unraid.
