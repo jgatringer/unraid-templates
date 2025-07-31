@@ -26,7 +26,7 @@
     echo "[ZeroTier Router] activate IP-Forwarding..."
     docker exec $CONTAINER sh -c "echo 1 > /proc/sys/net/ipv4/ip_forward"
 
-    # Interface-Name (eth0) have to be set to your network interface
+    # Interface-Name (eth0) have to be set to your network interface in iptables rules
     echo "[ZeroTier Router] set NAT-rule..."
     docker exec $CONTAINER sh -c "
       iptables -t nat -C POSTROUTING -o eth0 -j MASQUERADE 2>/dev/null \
